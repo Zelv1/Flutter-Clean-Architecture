@@ -1,4 +1,4 @@
-// ignore_for_file: deprecated_member_use
+// ignore_for_file: deprecated_member_use, depend_on_referenced_packages
 
 import 'dart:io';
 import 'package:clarch/features/daily_news/data/data_sources/remote/news_api_service.dart';
@@ -27,7 +27,6 @@ class ArticleRepositoryImpl implements ArticleRepository {
         return DataFailed(DioError(
             error: httpResponse.response.statusMessage,
             response: httpResponse.response,
-            type: DioErrorType.response,
             requestOptions: httpResponse.response.requestOptions));
       }
     } on DioError catch (e) {
