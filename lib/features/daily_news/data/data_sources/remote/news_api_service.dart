@@ -1,3 +1,5 @@
+// ignore_for_file: depend_on_referenced_packages
+
 import 'package:clarch/features/daily_news/data/models/article.dart';
 import 'package:retrofit/retrofit.dart';
 import '../../../../../core/constants/constants.dart';

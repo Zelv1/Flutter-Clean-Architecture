@@ -1,4 +1,5 @@
-// ignore_for_file: depend_on_referenced_packages
+// ignore_for_file: deprecated_member_use
+
 import 'package:dio/dio.dart';
 
 abstract class DataState<T> {

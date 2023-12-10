@@ -1,5 +1,5 @@
 import 'package:clarch/core/resources/data_state.dart';
-import 'package:clarch/features/daily_news/domain/entities/acticle.dart';
+import 'package:clarch/features/daily_news/domain/entities/article.dart';
 
 abstract class ArticleRepository {
   Future<DataState<List<ArticleEntity>>> getNewsArticles();
