@@ -1,8 +1,8 @@
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:clarch/core/resources/data_state.dart';
+import 'package:clarch/features/daily_news/domain/usecases/get_article.dart';
 import 'package:clarch/features/daily_news/presentation/bloc/article/remote/remote_article_event.dart';
 import 'package:clarch/features/daily_news/presentation/bloc/article/remote/remote_article_state.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../../../../core/resources/data_state.dart';
-import '../../../../domain/usecases/get_article.dart';
 
 class RemoteArticlesBloc
     extends Bloc<RemoteArticlesEvent, RemoteArticlesState> {

@@ -11,7 +11,7 @@ import 'package:clarch/features/daily_news/domain/repository/article_repository.
 class ArticleRepositoryImpl implements ArticleRepository {
   final NewsApiService _newsApiService;
 
-  ArticleRepositoryImpl(this._newsApiService);
+  ArticleRepositoryImpl(this._newsApiService, Object object);
   @override
   Future<DataState<List<ArticleModel>>> getNewsArticles() async {
     try {
