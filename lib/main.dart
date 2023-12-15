@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider<RemoteArticlesBloc>(
       create: (context) => sl()..add(const GetArticles()),
-      child: MaterialApp(
+      child: const MaterialApp(
         debugShowCheckedModeBanner: false,
         home: DailyNews(),
       ),
